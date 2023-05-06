@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" style="background-color: pink">
+        <div class="row my-5" style="background-color:aqua">
+            <a href="index3.html">Example 3</a>
+            
+        </div>
+
+        <div class="row" style="background-color: seagreen">
+            <div class="col-4" style="background-color: coral;">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start fs-5"
+                    id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fas fa-home"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu0" data-bs-toggle="collapse" class="nav-link align-middle px-0">
+                            <i class="fas fa-user"></i> <span class="ms-1 d-none d-sm-inline">Usuarios</span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu0" data-bs-parent="#submenu0">
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Usuarios" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Usuario</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Roles" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Roles</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="ModulosUsuario" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Modulos Uusario</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fas fa-desktop"></i> <span class="ms-1 d-none d-sm-inline">Productos</span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#submenu1">
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Productos" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Productos</span>
+                                </a>
+                            </li>
+                            <li class="w-100">
+                                <a class="nav-link px-0" asp-area="" asp-controller="TiposProductos" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Tipos Producto</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Marcas" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Marcas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="EstadosProductos"
+                                    asp-action="Index">
+                                    <span class="d-none d-sm-inline">Estado Producto</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fas fa-building"></i> <span class="ms-1 d-none d-sm-inline">Espacios</span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#submenu2">
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Departamentos" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Departamentos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Secretarias" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Secretarías</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="Oficinas" asp-action="Index">
+                                    <span class="d-none d-sm-inline">Oficinas</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fas fa-cogs"></i> <span class="ms-1 d-none d-sm-inline">Operaciones</span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu3" data-bs-parent="#submenu3">
+
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="TiposMovimientos"
+                                    asp-action="Index">
+                                    <span class="d-none d-sm-inline">Tipos Movimientos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="AsignacionOficinas"
+                                    asp-action="Index">
+                                    <span class="d-none d-sm-inline">Asignar Usuario a Oficina</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fas fa-clipboard"></i> <span class="ms-1 d-none d-sm-inline">Reportes</span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu4" data-bs-parent="#submenu4">
+
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="MovimientosProductos"
+                                    asp-action="Index">
+                                    <span class="d-none d-sm-inline">Movimientos Producto</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" asp-area="" asp-controller="AsignacionOficinas"
+                                    asp-action="Index">
+                                    <span class="d-none d-sm-inline">Asignar Usuario a Oficina</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-8" style="background-color: aquamarine;">
+                <p>l</p>
+            </div>
+        </div>
+    </div>    
+
+    <script href="js/bootstrap.js"></script>
+</body>
+</html>
